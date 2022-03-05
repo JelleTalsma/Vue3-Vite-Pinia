@@ -1,8 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const appTitle = import.meta.env.VITE_APP_TITLE;
+</script>
 
 <template>
   <div class="intro-content">
-    <h1 class="intro-title">Coddin Template: Vue3-Vite-Pinia</h1>
+    <h1 class="intro-title">{{ appTitle }}: Vue3-Vite-Pinia</h1>
     <div class="logo-wrapper">
       <img
         alt="Coddin logo"
