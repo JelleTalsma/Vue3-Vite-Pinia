@@ -1,0 +1,37 @@
+
+$max-amplitude: 0.1;
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  12% {
+    transform: scale(1 + $max-amplitude * 0.1);
+  }
+  20% {
+    transform: scale(1 - $max-amplitude * 0.05);
+  }
+  28% {
+    transform: scale(1 - $max-amplitude * 0.1);
+  }
+  32% {
+    transform: scale(1 + $max-amplitude * 0.2);
+  }
+  38% {
+    transform: scale(1 - $max-amplitude * 0.2);
+  }
+  50% {
+    transform: scale(1 - $max-amplitude * 0);
+  }
+  58% {
+    transform: scale(1 - $max-amplitude * 0.1);
+  }
+  70% {
+    transform: scale(1 - $max-amplitude * 0.5);
+  }
+  80% {
+    transform: scale(1 - $max-amplitude * 0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
